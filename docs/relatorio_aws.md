@@ -12,11 +12,11 @@ Descrição do Projeto
 O projeto de implementação estratégica foi dividido em 3 etapas, focando em serviços gerenciados que reduzem o custo operacional e de transferência. A seguir, as etapas descritas:
 
 <strong>Etapa 1:</strong>
-Ferramenta: Amazon CloudFront
+Ferramenta: AWS CloudFormation
 
-Foco: Distribuição de conteúdo (CDN)
+Foco: Infraestrutura como Código (IaC)
 
-Caso de uso: Utilizado para servir arquivos estáticos e documentos de pesquisa da farmacêutica. Ele reduz o custo de saída de dados (Data Transfer Out) ao realizar o cache nas bordas, evitando requisições diretas e repetitivas ao servidor de origem.
+Caso de uso: Utilizado para automatizar o provisionamento dos recursos da farmacêutica de forma padronizada e replicável. Através de templates, o CloudFormation garante que toda a infraestrutura seja criada sem erros manuais, permitindo a rápida destruição ou recriação de ambientes para testes de novas fórmulas, otimizando custos ao evitar recursos esquecidos ativos.
 
 <strong>Etapa 2:</strong>
 Ferramenta: AWS Fargate
